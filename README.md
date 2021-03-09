@@ -1,12 +1,12 @@
 # chess-ts
 Chess module for programatically checking chess board move logic written in typescript
 
-##Importing chess
+## Importing chess
 ```typescript
 import { Chess } from '{chess.tsx path}';
 ```
 
-##Setting up
+## Setting up
 Creates Chess board at default starting position
 ```typescript
 let chess = new Chess();
@@ -17,7 +17,7 @@ Set custom start position
 let chess = new Chess('r1b1kbnr/pppp1ppp/2n1q3/8/3Pp1N1/4P3/PPP2PPP/RNBQKB1R w KQkq - 1 6');
 ```
 
-##Get legal moves
+## Get legal moves
 Get all current legal moves, method call as:
 ```typescript
 public get_moves(): Map<string, Move[]> {
@@ -31,7 +31,7 @@ import {Move} from './static/definitions';
 let legal_moves : Map<string, Move[]> = chess.get_moves();
 ```
 
-##Make move
+## Make move
 Use `Move` in `Move[]` from legal_moves Map to pass into `chess.move()`
 Get map as `row`+`col` as a string.
 
@@ -46,7 +46,7 @@ if (moves_from_square){
 }
 ```
 
-##Make a custom move
+## Make a custom move
 ```typescript
 import {Move, MoveType, PieceType} from './static/definitions';
 ```
