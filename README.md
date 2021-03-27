@@ -3,7 +3,7 @@ Chess module for programatically checking chess board move logic written in type
 
 ## Importing chess
 ```typescript
-import { Chess } from '{chess.tsx path}';
+import { Chess } from '{chess.ts path}';
 ```
 
 ## Setting up
